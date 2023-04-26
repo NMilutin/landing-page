@@ -3,3 +3,131 @@ img{
     width:200px;
     height:auto;
 }
+
+/** Declaring display: flex; **/
+body,
+.header,
+.header-links,
+.main,
+.main-text,
+.info,
+.images,
+.info-image,
+.testimonial,
+.cta,
+.cta-window,
+.cta-window-text,
+.footer{
+    display: flex;
+}
+
+body,
+.main-text,
+.info,
+.info-image,
+.testimonial,
+.cta-window-text{
+    flex-direction: column;
+}
+
+/** Size, spacing and placement **/
+body {
+    padding-left:10%;
+    padding-right: 10%;
+    margin: 0;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.header {
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.header-links {
+    gap: 10px;
+}
+
+.main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.main img{
+    flex-grow: 1;
+    max-height: 200px;
+}
+
+.info {
+    align-self: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.images {
+    gap: 40px;
+}
+
+.info-image {
+    align-items: center;
+    width: min-content
+}
+
+.info-image span {
+    text-align: center;
+}
+
+.testimonial {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+.testimonial div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.testimonial-text {
+    align-self: flex-start;
+}
+
+.testimonial-signature {
+    align-self: flex-end;
+}
+
+.cta {
+    padding: 5%;
+    align-self: center;
+    gap: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.cta-title,
+.cta-text{
+    width:max-content
+}
+
+.footer {
+    align-self: center;
+    padding: 30px;
+    padding-left: 100vmax;
+    padding-right: 100vmax;
+}
+
+.footer-text {
+    width: max-content
+}
+
+/** Font and color**/
+.header,
+.main{
+    background-color: #1f2937;
+}
