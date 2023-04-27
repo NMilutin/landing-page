@@ -4,6 +4,9 @@ img{
     height:auto;
 }
 
+* {
+    font-family: Verdana, sans-serif;
+}
 /** Declaring display: flex; **/
 body,
 .header,
@@ -32,8 +35,6 @@ body,
 
 /** Size, spacing and placement **/
 body {
-    padding-left:10%;
-    padding-right: 10%;
     margin: 0;
     min-height: 100vh;
     justify-content: space-between;
@@ -41,16 +42,13 @@ body {
 
 .header {
     justify-content: space-between;
-    padding: 30px;
 }
 
 .header-links {
-    gap: 10px;
+    gap: 30px;
 }
 
 .main {
-    padding-top: 80px;
-    padding-bottom: 80px;
     justify-content: space-between;
     gap: 50px;
 }
@@ -64,8 +62,6 @@ body {
     align-self: center;
     align-items: center;
     gap: 40px;
-    padding-top: 40px;
-    padding-bottom: 80px;
 }
 
 .images {
@@ -74,7 +70,8 @@ body {
 
 .info-image {
     align-items: center;
-    width: min-content
+    width: min-content;
+    gap: 7px;
 }
 
 .info-image span {
@@ -82,16 +79,12 @@ body {
 }
 
 .testimonial {
-    padding-top: 80px;
-    padding-bottom: 80px;
     align-items: center;
 }
 
 .testimonial div {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 .testimonial-text {
@@ -103,11 +96,16 @@ body {
 }
 
 .cta {
-    padding: 5%;
     align-self: center;
     gap: 50px;
     margin-top: 60px;
     margin-bottom: 60px;
+    justify-content: space-between;
+    padding: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: #3882f6;
+    border-radius: 8px;
 }
 
 .cta-title,
@@ -126,8 +124,118 @@ body {
     width: max-content
 }
 
+.main-text {
+    max-width: 40ch;
+    gap: 20px;
+}
+
+.main-text button,
+.cta button {
+    width: fit-content;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 /** Font and color**/
-.header,
-.main{
+
+.container-darkblue {
+    padding: 15%;
+    padding-bottom: 40px;
+    padding-top: 40px;
     background-color: #1f2937;
+}
+
+.container-white {
+    padding: 15%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: #ffffff;
+}
+
+.container-gray {
+    padding: 15%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: #e5e7eb;
+}
+
+.footer {
+    background-color: #1f2937;
+}
+
+.main-text .subtitle,
+.header-link a{
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-logo{
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main-text .title {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.info .title {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.testimonial-text {
+    color: #1f2937;
+    font-size: 36px;
+    font-family: 'Open Sans Light';
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.info-image img{
+    border-color: #3882f6;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.main-text button {
+    border-radius: 10px;
+    background-color: #3882f6;
+    border-style: none;
+    color:#f9faf8;
+    font-weight: bold;
+}
+
+.cta-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.cta-text {
+    color:#f9faf8;
+}
+
+.cta button {
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #f9faf8;
+    border-color: #f9faf8;
+    border-style: solid;
+    font-weight: bold;
+}
+
+.footer-text {
+    color: #f9faf8;
+}
+
+.testimonial-signature {
+    font-weight: bold;
+    color: #1f2937;
 }
